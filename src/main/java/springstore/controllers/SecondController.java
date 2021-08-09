@@ -2,7 +2,7 @@ package springstore.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-
+/*
 @Controller
 public class SecondController {
 
@@ -11,3 +11,4 @@ public class SecondController {
         return "second/exit";
     }
 }
+*/
