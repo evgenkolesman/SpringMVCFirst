@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-
+/*
 @Controller
 @RequestMapping("/first")
 public class FirstController {
@@ -50,4 +50,4 @@ public class FirstController {
         model.addAttribute("message", z);
         return "first/calculator";
     }
-}
+}*/
