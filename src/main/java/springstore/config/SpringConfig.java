@@ -53,7 +53,7 @@ public class SpringConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public DataSource dataSource () {
+    public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
         dataSource.setDriverClassName("org.postgresql.Driver");
@@ -61,7 +61,7 @@ public class SpringConfig implements WebMvcConfigurer {
         dataSource.setUsername("postgres");
         dataSource.setPassword("PassworD1");
 
-        return  dataSource;
+        return dataSource;
     }
 
     @Bean

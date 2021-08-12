@@ -28,7 +28,7 @@ public class PeopleController {
     }
 
     @GetMapping("/{id}")
-    public String show(@PathVariable ("id") int id, Model model) {
+    public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("person", personDao.show(id));
         return "people/show";
     }
@@ -42,7 +42,7 @@ public class PeopleController {
     public String create(
             @ModelAttribute("person")
             @Valid Person person, BindingResult bindingResult) {
-        if(bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors()) {
             return "people/new";
         }
         personDao.save(person);
@@ -58,7 +58,7 @@ public class PeopleController {
     @PatchMapping("/{id}")
     public String update(@ModelAttribute("person") @Valid Person person, BindingResult bindingResult,
                          @PathVariable("id") int id) {
-        if(bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors()) {
             return "people/edit";
         }
         personDao.update(id, person);
